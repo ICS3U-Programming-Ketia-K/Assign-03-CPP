@@ -9,8 +9,8 @@
 #include <string>
 int askAgain() {
     std::string askToPlay;
-    std::cout << "\033[1;33;38mwould you like to play again :)?\
-    Please choose either y/n:  ";
+    std::cout << "\033[1;33;38mwould you like to play again :)?"
+              "Please choose either y/n: \n";
     std::cin >> askToPlay;
     if (askToPlay == "y" || askToPlay == "Y") {
         // declare a variable
@@ -58,8 +58,8 @@ int askAgain() {
         askAgain();
     } else if (askToPlay == "n" || askToPlay == "N") {
         std::cout << "" << std::endl;
-        std::cout << "\033[1;34;38mThank you for playing.\
-        Hope you enjoyed the game!\n";
+        std::cout << "\033[1;34;38mThank you for playing."
+                  "Hope you enjoyed the game!\n";
     } else {
       std::cout << "\033[1;34;38mPlease enter either y/n \n";
       askAgain();
